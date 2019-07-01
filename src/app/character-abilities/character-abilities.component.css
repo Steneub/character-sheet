@@ -1,0 +1,55 @@
+div {
+  border: unset;
+}
+
+#abilitiesContainer {
+  float: left;  
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+}
+
+.abilityContainer {
+  position:relative;
+  margin-bottom: 1.5em;
+  border: 2px solid black;
+}
+
+input {
+  color:darkblue;
+  width:100%;
+  border: 0;
+  text-align:center;
+}
+
+.abilityName {
+  font-size: .6em;
+  font-weight: bold;
+}
+
+.abilityScore {
+  font-size: 3em;
+  margin:0;
+  padding:0;
+}
+
+.abilityModifier {  
+  position:absolute;
+
+  width: 2.5em;
+  height: 1.5em;
+  
+  left: 0;
+  right: 0;
+  bottom: -1em;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border: 2px solid black;
+  background-color:white;
+
+  font-weight:bold;
+}

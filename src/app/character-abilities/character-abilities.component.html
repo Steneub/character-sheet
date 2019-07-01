@@ -1,0 +1,16 @@
+<div id="abilitiesContainer">
+  <div class="abilityContainer" *ngFor="let ability of abilities">
+
+    <div class="abilityName">{{ability.name}}</div>  
+
+    <input [(ngModel)]="toon.Abilities[ability.name]" class="abilityScore written"/>
+
+    <!--
+    {{abilityScore(toon.Abilities[ability.name])}}
+    </div>-->
+
+    <div class="abilityModifier written">{{abilityModifier(abilityScore(toon.Abilities[ability.name])) | signed}}
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,29 @@
+
+
+<div *ngIf="toon">
+  <form>
+  <div class="row">
+    <app-character-summary [toon]="toon"></app-character-summary>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item item1">
+      
+      <div class="subcolumnleft">
+          <app-character-abilities [toon]="toon"></app-character-abilities>
+      </div>
+      <div class="subcolumnright">
+        <app-character-saves [toon]="toon"></app-character-saves>
+        <app-character-skills [toon]="toon"></app-character-skills>        
+      </div>
+
+    </div>
+    <div class="grid-item item2"><app-character-vitals></app-character-vitals></div>
+    <div class="grid-item item3"><app-character-description></app-character-description></div>  
+    <div class="grid-item item4"><app-character-attacks></app-character-attacks></div>
+    <div class="grid-item item5"><app-character-features></app-character-features></div>
+    <div class="grid-item item6"><app-character-proficiencies></app-character-proficiencies></div>
+    <div class="grid-item item7"><app-character-equipment></app-character-equipment></div>
+  </div>
+  </form>
+</div>

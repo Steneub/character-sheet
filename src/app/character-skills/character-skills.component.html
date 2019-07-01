@@ -1,0 +1,10 @@
+<div class="elementContainer">
+  <div *ngFor="let skill of skills" class="listitem" [ngClass]="{tagged : toon.Skills.includes(skill.name)}">    
+      
+      <div *ngFor="let ability of abilities" style="display:inline">
+        <div *ngIf="ability.short == skill.ability" class="written value">{{abilityModifier(abilityScore(toon.Abilities[ability.name]))}}</div>      
+      </div>
+
+    <label>{{skill.name}} <span class="subInfo">({{skill.ability | titlecase }})</span></label>    
+  </div>
+</div>

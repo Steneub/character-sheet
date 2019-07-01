@@ -1,0 +1,19 @@
+div {
+  border:3px solid black;
+  margin: .5em;
+  text-align: center;
+}
+
+.input {
+    border:none;
+    margin:0;
+    text-align:left;
+    display:inline-block;    
+    min-height: 10em;
+    width: 100%;
+}
+
+label {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+<h2>Character Browser</h2>
+
+<div *ngIf="!toons">No characters</div>
+<div *ngFor="let toon of toons; index as toonId">
+  <a 
+    [title]="toon.Character.Name +' Character Sheet'"
+    [routerLink]="['/character', toonId]">{{toon.Character.Name}}</a>
+</div>
+
+<button (click)="createCharacter()">Create a new Character</button>

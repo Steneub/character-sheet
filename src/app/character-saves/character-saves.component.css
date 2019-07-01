@@ -1,0 +1,33 @@
+.listitem {
+  display:list-item;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+.tagged {
+  list-style-type: disc;
+}
+
+.value {
+  display:inline-block;
+  width: 2em;
+  margin: 2px auto;
+  text-align: center;
+
+  border-bottom: 1px black solid;
+}
+
+#proficiencyContainer {
+  border: blue 1px dashed;
+  position: relative;
+}
+
+#proficiencyContainer .value {
+  
+
+}
+
+#proficiencyContainer label {  
+
+}

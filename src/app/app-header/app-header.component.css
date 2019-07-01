@@ -1,0 +1,17 @@
+#app-header-container {
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: white;
+  margin: 0;
+}
+
+a {
+  color: white;
+  underline: none;
+}
+

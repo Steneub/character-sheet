@@ -1,0 +1,38 @@
+<div id="summaryContainer">
+
+  <div id="nameContainer">    
+    <input class="written" [(ngModel)]="toon.Character.Name" type="text"/>
+    <label>Character Name</label>
+  </div> 
+
+  <div id="detailsContainer">
+      <div class="detailsRow">
+        <div class ="field">
+          <input class="written" />
+          <label>Class & Level</label>
+        </div>
+        <div class ="field">
+          <input class="written" [(ngModel)]="toon.Character.Background"/>
+          <label>Background</label>
+        </div>
+        <div class ="field">
+          <input class="written" [(ngModel)]="toon.Character.Player"/>
+          <label>Player Name</label>
+        </div>
+      </div>
+      <div class="detailsRow">
+        <div class ="field">
+          <input class="written" [(ngModel)]="toon.Character.Race"/>
+          <label>Race</label>
+        </div>
+        <div class ="field">
+          <input class="written"/>
+          <label>Alignment</label>
+        </div>
+        <div class ="field">
+          <input class="written"/>
+          <label>Experience Points</label>
+        </div>
+      </div> 
+  </div>
+</div>

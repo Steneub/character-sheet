@@ -1,0 +1,18 @@
+<div class="elementContainer" id="inspirationContainer">
+  <input ([ngModel])="toon.Inspiration"/>
+  <label>Inspiration</label>
+</div>
+
+<div class="elementContainer" id="proficiencyContainer">
+  <div class="value">{{proficiencyBonus(toon)}}</div>
+  <label>Proficiency Bonus</label>
+</div>
+
+<div class="elementContainer">
+  <div *ngFor="let ability of abilities" class="listitem" [ngClass]="{tagged : toon.Saves.includes(ability.name)}">     
+    
+    <div class="written value">{{abilityModifier(abilityScore(toon.Abilities[ability.name])) + (toon.Saves.includes(ability.name)?proficiencyBonus(toon):0)}}</div>
+
+    <label>{{ability.name}}</label>
+  </div>
+</div>

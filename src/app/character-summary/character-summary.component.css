@@ -1,0 +1,42 @@
+#summaryContainer {
+  position: relative;
+  display: block;
+
+  height: 12em;
+}
+
+#detailsContainer  {
+  position: absolute;
+}
+
+#nameContainer {
+  padding: 2em;  
+}
+
+#detailsContainer {
+  top: 1em;
+  right: 2em;
+  border : solid black 2px;
+  width:70%;
+  background-color: white;
+}
+
+.field {
+  display: inline-block;
+  width: 33.333333%;
+}
+
+input {
+  width: 100%;
+  font-size: 1.5em;
+  border: none;
+  border-bottom: solid black 1px;
+}
+
+label {
+  width: 100%; 
+  height: .5em;
+  font-size: .75em;
+  text-transform:uppercase;
+  vertical-align:top;
+}
